@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextFieldWithButton" customModule="stayconnected" customModuleProvider="target">
+            <connections>
+                <outlet property="btnView" destination="4rs-yi-YeS" id="fh6-bb-84y"/>
+                <outlet property="textView" destination="hDS-Ld-7IA" id="p7P-6F-r2g"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rs-yi-YeS">
+                    <rect key="frame" x="510" y="0.0" width="90" height="52"/>
+                    <color key="backgroundColor" red="0.16198650401010095" green="0.41339921768729831" blue="0.4380408653846154" alpha="0.66842672413793103" colorSpace="calibratedRGB"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDS-Ld-7IA">
+                    <rect key="frame" x="0.0" y="0.0" width="510" height="52"/>
+                    <color key="backgroundColor" red="0.2149877394033286" green="0.55729166666666674" blue="0.51214826290424076" alpha="0.45651939655172413" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.71764705882352942" green="0.87058823529411766" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hDS-Ld-7IA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="6CX-Vg-Dbv"/>
+                <constraint firstItem="4rs-yi-YeS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Lz0-Sq-iY0"/>
+                <constraint firstAttribute="trailing" secondItem="4rs-yi-YeS" secondAttribute="trailing" id="Ndi-sO-M00"/>
+                <constraint firstItem="hDS-Ld-7IA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RIv-aV-L54"/>
+                <constraint firstItem="4rs-yi-YeS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="W6f-df-Qjd"/>
+                <constraint firstItem="hDS-Ld-7IA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.85" id="k16-KJ-DHs"/>
+                <constraint firstItem="4rs-yi-YeS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.15" id="qDF-AR-qIm"/>
+                <constraint firstItem="hDS-Ld-7IA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r8i-jo-Ki6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-120" y="-676"/>
+        </view>
+    </objects>
+</document>

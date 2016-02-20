@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginUI View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginUIViewController" customModule="stayconnected" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get thousands of masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHJ-od-Ieq">
+                                <rect key="frame" x="40" y="158" width="206" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E49-fG-1Ca" customClass="CustomTextFieldWithButton" customModule="stayconnected" customModuleProvider="target">
+                                <rect key="frame" x="40" y="278" width="520" height="45"/>
+                                <color key="backgroundColor" red="0.2236923515" green="1" blue="0.96641676840000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcM-HQ-h9c" customClass="CustomTextFieldWithButton" customModule="stayconnected" customModuleProvider="target">
+                                <rect key="frame" x="40" y="343" width="520" height="45"/>
+                                <color key="backgroundColor" red="0.2236923515" green="1" blue="0.96641676840000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHk-pg-B8H">
+                                <rect key="frame" x="150" y="535" width="300" height="45"/>
+                                <color key="backgroundColor" red="0.22127958915387946" green="0.24365230436234614" blue="0.51708733974358978" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Signin">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay Connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1J-W3-r7Z">
+                                <rect key="frame" x="40" y="123" width="187" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="29"/>
+                                <color key="textColor" red="0.99949919871794868" green="0.99949919871794868" blue="0.99949919871794868" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.084239532365793721" green="0.23181936965997454" blue="0.6145432692307693" alpha="0.50587284482758621" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VHk-pg-B8H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2a0-o2-sjh"/>
+                            <constraint firstItem="p1J-W3-r7Z" firstAttribute="bottom" secondItem="ZHJ-od-Ieq" secondAttribute="top" id="Dh8-1r-GPQ"/>
+                            <constraint firstItem="VHk-pg-B8H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Dy2-ra-bRB"/>
+                            <constraint firstItem="p1J-W3-r7Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="HgJ-eY-xyH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VHk-pg-B8H" secondAttribute="bottom" constant="20" id="JNP-OC-xdr"/>
+                            <constraint firstItem="ZHJ-od-Ieq" firstAttribute="top" secondItem="p1J-W3-r7Z" secondAttribute="bottom" id="Klh-3u-eeK"/>
+                            <constraint firstItem="E49-fG-1Ca" firstAttribute="top" secondItem="ZHJ-od-Ieq" secondAttribute="bottom" constant="100" id="LFn-vs-3LV"/>
+                            <constraint firstItem="ZHJ-od-Ieq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="MlU-ea-QC4"/>
+                            <constraint firstItem="E49-fG-1Ca" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OFx-aq-og5"/>
+                            <constraint firstItem="kcM-HQ-h9c" firstAttribute="top" secondItem="E49-fG-1Ca" secondAttribute="bottom" constant="20" id="QbE-ga-DAC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kcM-HQ-h9c" secondAttribute="trailing" constant="20" id="Tnk-Yf-nza"/>
+                            <constraint firstItem="E49-fG-1Ca" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ULe-sV-qt6"/>
+                            <constraint firstItem="ZHJ-od-Ieq" firstAttribute="top" secondItem="p1J-W3-r7Z" secondAttribute="bottom" id="Uh7-wc-WEE"/>
+                            <constraint firstItem="VHk-pg-B8H" firstAttribute="height" secondItem="kcM-HQ-h9c" secondAttribute="height" id="e0J-pK-XCq"/>
+                            <constraint firstItem="E49-fG-1Ca" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="gOT-U5-hel"/>
+                            <constraint firstItem="E49-fG-1Ca" firstAttribute="height" secondItem="kcM-HQ-h9c" secondAttribute="height" id="nMg-q2-Tgz"/>
+                            <constraint firstItem="kcM-HQ-h9c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="nZV-Ku-HSP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E49-fG-1Ca" secondAttribute="trailing" constant="20" id="rSA-97-jYg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="kcM-HQ-h9c" id="IIg-m4-tHL"/>
+                        <outlet property="userName" destination="E49-fG-1Ca" id="JiG-8y-iUh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="290"/>
         </scene>
     </scenes>
 </document>
